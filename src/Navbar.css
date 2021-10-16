@@ -1,0 +1,23 @@
+.nav-container {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between !important;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#about {
+  margin-right: 10px;
+}
+
+a {
+  color: black !important;
+}
+
+.selected {
+  color: white;
+}
