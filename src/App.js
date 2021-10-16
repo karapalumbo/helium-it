@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 import { About } from "./About";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <h1>Helium IT, LLC</h1>
           <About />
         </header>
+        <Footer />
       </BrowserRouter>
     </div>
   );

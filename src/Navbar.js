@@ -321,4 +321,9 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Learn Bitcoin",
     href: "#",
   },
+  {
+    label: "Projects",
+    href: "",
+    // https://www.helium.com/
+  },
 ];
