@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import { ReactNode, React } from "react";
+import Pricing from "./Pricing";
 
 import {
   Box,
@@ -38,6 +39,8 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
   );
 };
 
+const PricingLink = () => <Pricing />;
+
 export const Footer = () => {
   return (
     <Box
@@ -60,13 +63,8 @@ export const Footer = () => {
           <Stack align={"flex-start"}>
             <ListHeader>Services</ListHeader>
             <Link href={"#"}>Overview</Link>
-            <Link href={"#"}>Pricing</Link>
+            <Link href={"/pricing"}>Pricing</Link>
           </Stack>
-          {/* <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About</Link>
-            <Link href={"#"}>Contact</Link>
-          </Stack> */}
           <Stack align={"flex-start"}>
             <ListHeader>Support</ListHeader>
             <Link href={"#"}>Help Center</Link>

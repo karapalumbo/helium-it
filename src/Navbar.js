@@ -77,7 +77,7 @@ export const Navbar = () => {
           direction={"row"}
           spacing={6}
         >
-          <Link
+          {/* <Link
             p={2}
             href={"#"}
             fontSize={"sm"}
@@ -89,21 +89,8 @@ export const Navbar = () => {
             }}
           >
             Contact
-          </Link>
+          </Link> */}
           <ContactModal />
-          {/* <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"green.400"}
-            href={"#"}
-            _hover={{
-              bg: "green.300",
-            }}
-          >
-            CONTACT
-          </Button> */}
         </Stack>
       </Flex>
 
@@ -288,14 +275,6 @@ const NAV_ITEMS: Array<NavItem> = [
       },
     ],
   },
-  // {
-  //   label: "Contact",
-  //   children: [
-  //     {
-  //       label: "info@heliumit.net",
-  //     },
-  //   ],
-  // },
   {
     label: "Learn Crypto",
     children: [
