@@ -1,34 +1,3 @@
-// import React from "react";
-// import {
-//   Breadcrumb,
-//   BreadcrumbItem,
-//   BreadcrumbLink,
-//   ChevronRightIcon,
-// } from "@chakra-ui/react";
-
-// export const Navbar = () => {
-//   return (
-//     <nav>
-//       <Breadcrumb
-//         spacing="8px"
-//         separator={<ChevronRightIcon color="gray.500" />}
-//       >
-//         <BreadcrumbItem>
-//           <BreadcrumbLink href="#">Home</BreadcrumbLink>
-//         </BreadcrumbItem>
-
-//         <BreadcrumbItem>
-//           <BreadcrumbLink href="#">About</BreadcrumbLink>
-//         </BreadcrumbItem>
-
-//         <BreadcrumbItem isCurrentPage>
-//           <BreadcrumbLink href="#">Contact</BreadcrumbLink>
-//         </BreadcrumbItem>
-//       </Breadcrumb>
-//     </nav>
-//   );
-// };
-
 import {
   Box,
   Flex,
@@ -56,6 +25,8 @@ import {
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
+  const linkColor = useColorModeValue("gray.600", "gray.200");
+  const linkHoverColor = useColorModeValue("gray.800", "white");
 
   return (
     <Box>
@@ -104,28 +75,28 @@ export const Navbar = () => {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
+          <Link
+            p={2}
             href={"#"}
-          >
-            About
-          </Button>
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"green.400"}
-            href={"#"}
+            fontWeight={500}
+            color={linkColor}
             _hover={{
-              bg: "green.300",
+              textDecoration: "none",
+              color: linkHoverColor,
             }}
           >
             Contact
-          </Button>
+            {/* // display={{ base: "none", md: "inline-flex" }}
+            // fontSize={"sm"}
+            // fontWeight={600}
+            // color={"white"}
+            // bg={"green.400"}
+            // href={"#"}
+            // _hover={{
+            //   bg: "green.300",
+            // }} */}
+          </Link>
         </Stack>
       </Flex>
 
@@ -298,32 +269,42 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "About",
+    label: "Our Services",
     children: [
       {
-        label: "Explore",
-        subLabel: "Trending",
+        label: "IT Support and Consulting",
+        href: "#",
+      },
+      {
+        label: "Crypto Mining Consulting and Setup",
         href: "#",
       },
     ],
   },
+  // {
+  //   label: "Contact",
+  //   children: [
+  //     {
+  //       label: "info@heliumit.net",
+  //     },
+  //   ],
+  // },
   {
-    label: "Contact",
+    label: "Learn Crypto",
     children: [
       {
-        label: "Contact us today",
-        subLabel: "xxx",
+        label: "Basic Crypto 101",
         href: "#",
       },
     ],
-  },
-  {
-    label: "Learn Bitcoin",
-    href: "#",
   },
   {
     label: "Projects",
-    href: "",
-    // https://www.helium.com/
+    children: [
+      {
+        label: "Helium",
+        href: "https://www.helium.com/",
+      },
+    ],
   },
 ];
