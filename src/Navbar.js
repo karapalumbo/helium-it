@@ -24,21 +24,20 @@ import {
 } from "@chakra-ui/icons";
 
 import ContactModal from "./ContactModal";
+import "./NavBar.css";
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
 
   return (
-    <Box>
+    <Box className="navbar">
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={useColorModeValue("#0f1230", "white")}
+        color={useColorModeValue("white", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={1}
+        // borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
@@ -59,11 +58,12 @@ export const Navbar = () => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Text
+            className="logo"
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
+            color={useColorModeValue("white.800", "white")}
           >
-            Logo
+            <a href="/">Logo</a>
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -77,19 +77,6 @@ export const Navbar = () => {
           direction={"row"}
           spacing={6}
         >
-          {/* <Link
-            p={2}
-            href={"#"}
-            fontSize={"sm"}
-            fontWeight={500}
-            color={linkColor}
-            _hover={{
-              textDecoration: "none",
-              color: linkHoverColor,
-            }}
-          >
-            Contact
-          </Link> */}
           <ContactModal />
         </Stack>
       </Flex>
@@ -102,9 +89,9 @@ export const Navbar = () => {
 };
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
+  const linkColor = useColorModeValue("white.600", "white.200");
+  const linkHoverColor = useColorModeValue("white.800", "white");
+  const popoverContentBgColor = useColorModeValue("gray.600", "gray.800");
 
   return (
     <Stack direction={"row"} spacing={4}>

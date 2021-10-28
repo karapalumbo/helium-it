@@ -59,7 +59,7 @@ function Pricing() {
             >
               <Text
                 textTransform="uppercase"
-                bg={useColorModeValue("red.300", "red.700")}
+                bg={useColorModeValue("teal.300", "teal.700")}
                 px={3}
                 py={1}
                 color={useColorModeValue("gray.900", "gray.300")}
@@ -72,7 +72,7 @@ function Pricing() {
             </Box>
             <Box py={4} px={12}>
               <Text fontWeight="500" fontSize="2xl">
-                Growth
+                {/* Growth */}
               </Text>
               <HStack justifyContent="center">
                 <Text fontSize="3xl" fontWeight="600">
@@ -108,13 +108,9 @@ function Pricing() {
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   5TB Lorem, ipsum dolor.
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
-                </ListItem>
               </List>
               <Box w="80%" pt={7}>
-                <Button w="full" colorScheme="red">
+                <Button w="full" colorScheme="blue">
                   Contact us
                 </Button>
               </Box>

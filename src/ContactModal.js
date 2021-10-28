@@ -11,6 +11,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
+import "./ContactForm.css";
+
 export default function ContactModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = React.useState("full");
@@ -23,9 +25,11 @@ export default function ContactModal() {
   return (
     <>
       <Button
+        className="contact-btn"
         onClick={() => handleSizeClick(size)}
         key={size}
         m={4}
+        variant="ghost"
       >{`Contact`}</Button>
 
       <Modal onClose={onClose} size={size} isOpen={isOpen}>

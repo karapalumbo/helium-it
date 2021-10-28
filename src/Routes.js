@@ -9,6 +9,7 @@ function Routes() {
       <Route exact path="/">
         <About />
       </Route>
+
       <Route exact path="/pricing">
         <Pricing />
       </Route>

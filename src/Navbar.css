@@ -1,23 +1,12 @@
-.nav-container {
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: space-between !important;
-  margin-bottom: 10px;
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  padding: 0;
 }
 
-.nav-links {
-  display: inline-flex;
-  font-weight: 600;
-}
-
-#about {
-  margin-right: 10px;
-}
-
-a {
-  color: black !important;
-}
-
-.selected {
-  color: white;
+.logo {
+  margin-left: 50px;
 }
