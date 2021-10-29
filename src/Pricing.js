@@ -16,7 +16,7 @@ import {
 import { FaCheckCircle } from "react-icons/fa";
 import PrimaryButton from "./PrimaryButton";
 
-function PriceWrapper({ children }: { children: ReactNode }) {
+function PriceWrapper({ children }) {
   return (
     <Box
       mb={4}

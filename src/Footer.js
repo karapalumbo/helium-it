@@ -1,4 +1,4 @@
-import { ReactNode, React } from "react";
+import React, { ReactNode } from "react";
 import Pricing from "./Pricing";
 
 import {
@@ -13,11 +13,11 @@ import {
 } from "@chakra-ui/react";
 import heliumLogoLight from "./images/heliumITLogoLight.png";
 
-const Logo = (props: any) => {
+const Logo = () => {
   return <Image maxWidth="120px" src={heliumLogoLight} />;
 };
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
+const ListHeader = ({ children }) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
