@@ -10,6 +10,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
+import PrimaryButton from "./PrimaryButton";
+
 import "./ContactForm.css";
 
 export default function ContactModal() {
@@ -23,6 +25,7 @@ export default function ContactModal() {
 
   return (
     <>
+      {/* <PrimaryButton text="Contact" /> */}
       <Button
         className="contact-btn"
         onClick={() => handleSizeClick(size)}

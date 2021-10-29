@@ -45,9 +45,6 @@ function Pricing() {
           <Heading as="h1" mb={10} fontSize="4xl" color="white">
             One rate for all of your needs.
           </Heading>
-          {/* <Text fontSize="lg" color={"gray.500"}>
-          Contact us today to get started.
-        </Text> */}
         </VStack>
         <PriceWrapper>
           <Box position="relative">
@@ -105,6 +102,7 @@ function Pricing() {
               </List>
               <Box w="80%" pt={7}>
                 <PrimaryButton text="Contact us" />
+                {/* <ContactModal /> */}
               </Box>
             </VStack>
           </Box>

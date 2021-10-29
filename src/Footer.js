@@ -25,8 +25,6 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
   );
 };
 
-const PricingLink = () => <Pricing />;
-
 export const Footer = () => {
   return (
     <Box
