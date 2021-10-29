@@ -1,9 +1,9 @@
 import {
+  Container,
   Box,
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -31,59 +31,65 @@ export const Navbar = () => {
 
   return (
     <Box className="navbar">
-      <Flex
-        bg={useColorModeValue("#0f1230", "white")}
-        color={useColorModeValue("white", "white")}
-        minH={"60px"}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        // borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
-        align={"center"}
-      >
+      <Container maxW="container.lg">
         <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
+          bg={useColorModeValue("#0f1230", "white")}
+          color={useColorModeValue("white", "white")}
+          minH={"60px"}
+          py={{ base: 2 }}
+          px={{ base: 4 }}
+          // borderBottom={1}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("gray.200", "gray.900")}
+          align={"center"}
         >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={"ghost"}
-            aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            className="logo"
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("white.800", "white")}
+          <Flex
+            flex={{ base: 1, md: "auto" }}
+            ml={{ base: -2 }}
+            display={{ base: "flex", md: "none" }}
           >
-            <a href="/">Logo</a>
-          </Text>
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
+              variant={"ghost"}
+              aria-label={"Toggle Navigation"}
+            />
           </Flex>
+          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+            <Text
+              className="logo"
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              fontFamily={"heading"}
+              color={useColorModeValue("white.800", "white")}
+            >
+              <a href="/">Logo</a>
+            </Text>
+
+            <Flex display={{ base: "none", md: "flex" }} ml={10}>
+              <DesktopNav />
+            </Flex>
+          </Flex>
+
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={6}
+          >
+            <ContactModal />
+          </Stack>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <ContactModal />
-        </Stack>
-      </Flex>
-
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
+        <Collapse in={isOpen} animateOpacity>
+          <MobileNav />
+        </Collapse>
+      </Container>
     </Box>
   );
 };
@@ -145,13 +151,13 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("green.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("black.50", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "green.400" }}
+            _groupHover={{ color: "#5ec3b5" }}
             fontWeight={500}
           >
             {label}
@@ -167,7 +173,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           align={"center"}
           flex={1}
         >
-          <Icon color={"green.400"} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={"#0f1230"} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>

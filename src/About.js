@@ -1,15 +1,7 @@
 import React from "react";
 import "./About.css";
 
-import {
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Stack,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
 export default function About() {
   return (

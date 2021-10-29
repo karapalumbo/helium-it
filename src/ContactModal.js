@@ -15,7 +15,7 @@ import "./ContactForm.css";
 
 export default function ContactModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [size, setSize] = React.useState("full");
+  const [size, setSize] = React.useState("md");
 
   const handleSizeClick = (size) => {
     setSize(size);
@@ -28,8 +28,9 @@ export default function ContactModal() {
         className="contact-btn"
         onClick={() => handleSizeClick(size)}
         key={size}
-        m={4}
-        variant="ghost"
+        variant="#0f1230"
+        color="#0f1230"
+        textColor="white"
       >{`Contact`}</Button>
 
       <Modal onClose={onClose} size={size} isOpen={isOpen}>
