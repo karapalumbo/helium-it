@@ -10,8 +10,6 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-import PrimaryButton from "./PrimaryButton";
-
 import "./ContactForm.css";
 
 export default function ContactModal() {

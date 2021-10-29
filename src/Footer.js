@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import Pricing from "./Pricing";
+import React from "react";
+// import Pricing from "./Pricing";
 
 import {
   Box,
