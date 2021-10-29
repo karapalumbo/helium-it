@@ -11,10 +11,10 @@ import {
   List,
   ListItem,
   ListIcon,
-  Button,
 } from "@chakra-ui/react";
 
 import { FaCheckCircle } from "react-icons/fa";
+import PrimaryButton from "./PrimaryButton";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -33,22 +33,22 @@ function PriceWrapper({ children }: { children: ReactNode }) {
 
 function Pricing() {
   return (
-    <Box py={12}>
-      <VStack spacing={2} textAlign="center">
-        <Heading as="h1" fontSize="4xl">
-          One rate for all of your needs.
-        </Heading>
-        {/* <Text fontSize="lg" color={"gray.500"}>
+    <Stack
+      direction={{ base: "column", md: "row" }}
+      textAlign="center"
+      justify="center"
+      spacing={{ base: 4, lg: 10 }}
+      py={10}
+    >
+      <Box py={12}>
+        <VStack spacing={2} textAlign="center">
+          <Heading as="h1" mb={10} fontSize="4xl" color="white">
+            One rate for all of your needs.
+          </Heading>
+          {/* <Text fontSize="lg" color={"gray.500"}>
           Contact us today to get started.
         </Text> */}
-      </VStack>
-      <Stack
-        direction={{ base: "column", md: "row" }}
-        textAlign="center"
-        justify="center"
-        spacing={{ base: 4, lg: 10 }}
-        py={10}
-      >
+        </VStack>
         <PriceWrapper>
           <Box position="relative">
             <Box
@@ -71,17 +71,15 @@ function Pricing() {
               </Text>
             </Box>
             <Box py={4} px={12}>
-              <Text fontWeight="500" fontSize="2xl">
-                {/* Growth */}
-              </Text>
+              <Text fontWeight="500" fontSize="2xl"></Text>
               <HStack justifyContent="center">
-                <Text fontSize="3xl" fontWeight="600">
+                <Text fontSize="3xl" fontWeight="600" color="white">
                   $
                 </Text>
-                <Text fontSize="5xl" fontWeight="900">
+                <Text fontSize="5xl" fontWeight="900" color="white">
                   150
                 </Text>
-                <Text fontSize="3xl" color="gray.500">
+                <Text fontSize="3xl" color="white">
                   flat rate
                 </Text>
               </HStack>
@@ -104,21 +102,15 @@ function Pricing() {
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   5TB Lorem, ipsum dolor.
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
-                </ListItem>
               </List>
               <Box w="80%" pt={7}>
-                <Button w="full" colorScheme="blue">
-                  Contact us
-                </Button>
+                <PrimaryButton text="Contact us" />
               </Box>
             </VStack>
           </Box>
         </PriceWrapper>
-      </Stack>
-    </Box>
+      </Box>
+    </Stack>
   );
 }
 

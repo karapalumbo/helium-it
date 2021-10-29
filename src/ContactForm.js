@@ -12,8 +12,6 @@ import {
   Heading,
   Button,
   VStack,
-  Wrap,
-  WrapItem,
   FormControl,
   FormLabel,
   Input,
@@ -24,6 +22,7 @@ import {
 
 import { MdOutlineEmail } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
+import PrimaryButton from "./PrimaryButton";
 
 export default function ContactForm() {
   const {
@@ -158,18 +157,7 @@ export default function ContactForm() {
                 </FormControl>
 
                 <FormControl id="name">
-                  <Button
-                    variant="solid"
-                    bg="#0B0E3F"
-                    marginTop="3"
-                    color="white"
-                    className="submit-btn"
-                    type="submit"
-                    width="100%"
-                    _hover={{ bg: "#3499cc" }}
-                  >
-                    Send Message
-                  </Button>
+                  <PrimaryButton text="Send Message" />
                 </FormControl>
               </form>
 

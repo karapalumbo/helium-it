@@ -13,6 +13,7 @@ import {
   PopoverContent,
   useColorModeValue,
   useBreakpointValue,
+  Image,
   useDisclosure,
 } from "@chakra-ui/react";
 
@@ -25,6 +26,7 @@ import {
 
 import ContactModal from "./ContactModal";
 import "./NavBar.css";
+import heliumLogo from "./images/heliumITLogoDark.png";
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -61,14 +63,20 @@ export const Navbar = () => {
               aria-label={"Toggle Navigation"}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+          <Flex
+            flex={{ base: 1 }}
+            justify={{ base: "center", md: "start" }}
+            alignItems="center"
+          >
             <Text
               className="logo"
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontFamily={"heading"}
               color={useColorModeValue("white.800", "white")}
             >
-              <a href="/">Logo</a>
+              <a href="/">
+                <Image maxWidth={"140px"} src={heliumLogo} />
+              </a>
             </Text>
 
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -97,7 +105,7 @@ export const Navbar = () => {
 const DesktopNav = () => {
   const linkColor = useColorModeValue("white.600", "white.200");
   const linkHoverColor = useColorModeValue("white.800", "white");
-  const popoverContentBgColor = useColorModeValue("gray.600", "gray.800");
+  const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
     <Stack direction={"row"} spacing={4}>
@@ -156,6 +164,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
+            color="gray.800"
             transition={"all .3s ease"}
             _groupHover={{ color: "#5ec3b5" }}
             fontWeight={500}

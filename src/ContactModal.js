@@ -4,7 +4,6 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Button,
@@ -40,9 +39,6 @@ export default function ContactModal() {
           <ModalBody>
             <ContactForm />
           </ModalBody>
-          <ModalFooter>
-            <Button onClick={onClose}>Close</Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
