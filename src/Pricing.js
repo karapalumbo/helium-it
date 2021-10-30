@@ -9,10 +9,12 @@ import {
   List,
   ListItem,
   ListIcon,
+  useDisclosure,
 } from "@chakra-ui/react";
 
 import { FaCheckCircle } from "react-icons/fa";
 import PrimaryButton from "./PrimaryButton";
+import ContactModal from "./ContactModal";
 
 function PriceWrapper({ children }) {
   return (
@@ -30,6 +32,12 @@ function PriceWrapper({ children }) {
 }
 
 function Pricing() {
+  const { isOpen, onClose, onOpen } = useDisclosure();
+
+  const handleClick = () => {
+    onOpen();
+  };
+
   return (
     <Stack
       direction={{ base: "column", md: "row" }}
@@ -99,8 +107,8 @@ function Pricing() {
                 </ListItem>
               </List>
               <Box w="80%" pt={7}>
-                <PrimaryButton text="Contact us" />
-                {/* <ContactModal /> */}
+                <PrimaryButton text="Contact Us" onClick={handleClick} />
+                <ContactModal isOpen={isOpen} onClose={onClose} />
               </Box>
             </VStack>
           </Box>

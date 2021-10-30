@@ -27,9 +27,15 @@ import {
 import ContactModal from "./ContactModal";
 import "./Navbar.css";
 import heliumLogo from "./images/heliumITLogoDark.png";
+import PrimaryButton from "./PrimaryButton";
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
+  const { isOpen: isContactModalOpen, onClose, onOpen } = useDisclosure();
+
+  const handleClick = () => {
+    onOpen();
+  };
 
   return (
     <Box className="navbar">
@@ -40,7 +46,6 @@ export const Navbar = () => {
           minH={"60px"}
           py={{ base: 2 }}
           px={{ base: 4 }}
-          // borderBottom={1}
           borderStyle={"solid"}
           borderColor={useColorModeValue("gray.200", "gray.900")}
           align={"center"}
@@ -90,7 +95,8 @@ export const Navbar = () => {
             direction={"row"}
             spacing={6}
           >
-            <ContactModal />
+            <PrimaryButton text="Contact" onClick={handleClick} />
+            <ContactModal isOpen={isContactModalOpen} onClose={onClose} />
           </Stack>
         </Flex>
 

@@ -6,34 +6,15 @@ import {
   ModalContent,
   ModalBody,
   ModalCloseButton,
-  Button,
   useDisclosure,
 } from "@chakra-ui/react";
 
 import "./ContactForm.css";
 
-export default function ContactModal() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const [size, setSize] = React.useState("md");
-
-  const handleSizeClick = (size) => {
-    setSize(size);
-    onOpen();
-  };
-
+export default function ContactModal({ ...elemProps }) {
   return (
     <>
-      {/* <PrimaryButton text="Contact" /> */}
-      <Button
-        className="contact-btn"
-        onClick={() => handleSizeClick(size)}
-        key={size}
-        variant="#0f1230"
-        color="#0f1230"
-        textColor="white"
-      >{`Contact`}</Button>
-
-      <Modal onClose={onClose} size={size} isOpen={isOpen}>
+      <Modal size="md" {...elemProps}>
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
