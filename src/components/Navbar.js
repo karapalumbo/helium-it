@@ -26,7 +26,7 @@ import {
 
 import ContactModal from "./ContactModal";
 import "./Navbar.css";
-import heliumLogo from "./images/heliumITLogoDark.png";
+import heliumLogo from "../images/heliumITLogoDark.png";
 import PrimaryButton from "./PrimaryButton";
 
 export const Navbar = () => {

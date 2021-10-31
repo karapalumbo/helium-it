@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Pricing from "./Pricing";
-import About from "./About";
+import Pricing from "./pages/Pricing";
+import About from "./pages/About";
 
 function Routes() {
   return (

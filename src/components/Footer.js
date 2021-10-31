@@ -11,7 +11,7 @@ import {
   useColorModeValue,
   Image,
 } from "@chakra-ui/react";
-import heliumLogoLight from "./images/heliumITLogoLight.png";
+import heliumLogoLight from "../images/heliumITLogoLight.png";
 
 const Logo = () => {
   return <Image maxWidth="120px" src={heliumLogoLight} />;
