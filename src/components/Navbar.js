@@ -24,6 +24,8 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 
+// import { Link } from "react-scroll";
+
 import ContactModal from "./ContactModal";
 import "./Navbar.css";
 import heliumLogo from "../images/heliumITLogoDark.png";
@@ -38,11 +40,13 @@ export const Navbar = () => {
   };
 
   return (
-    <Box className="navbar">
+    <Box
+      className="navbar"
+      bg={useColorModeValue("#0f1230", "white")}
+      color={useColorModeValue("white", "white")}
+    >
       <Container maxW="container.lg">
         <Flex
-          bg={useColorModeValue("#0f1230", "white")}
-          color={useColorModeValue("white", "white")}
           minH={"60px"}
           py={{ base: 2 }}
           px={{ base: 4 }}
@@ -268,11 +272,15 @@ const NAV_ITEMS = [
     children: [
       {
         label: "IT Support and Consulting",
-        href: "#",
+        href: "#IT-support",
       },
       {
         label: "Crypto Mining Consulting and Setup",
-        href: "#",
+        href: "#crypto-mining",
+      },
+      {
+        label: "Pricing",
+        href: "/pricing",
       },
     ],
   },
@@ -281,7 +289,7 @@ const NAV_ITEMS = [
     children: [
       {
         label: "Basic Crypto 101",
-        href: "#",
+        href: "#crypto-101",
       },
     ],
   },

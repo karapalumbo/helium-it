@@ -12,8 +12,9 @@ function App() {
       <BrowserRouter>
         <Container maxW="container.lg">
           <Navbar />
-          <Routes />
         </Container>
+        <Routes />
+
         <Footer />
       </BrowserRouter>
     </div>
