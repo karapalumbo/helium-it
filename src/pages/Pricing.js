@@ -22,25 +22,30 @@ function Pricing() {
         py={10}
       >
         <PricingCard
-          pricingTitle="Special"
+          pricingTitle="IT Support"
           price={150}
-          rate="Flat Rate"
+          rate="Hourly"
           listOfPricingDetails={[
-            "Unlimited build minutes.",
-            "Lorem, ipsum dolor.",
-            "5GB lorem, ipsum dolor.",
+            "Specialized for your business.",
+            "Personal IT support and consulting.",
           ]}
         />
         <PricingCard
-          pricingTitle="Pro"
-          price={175}
-          rate="Flat Rate"
+          pricingTitle="Basic Crypto 101"
+          price={150}
+          rate="Hourly"
           listOfPricingDetails={[
-            "Unlimited build minutes.",
-            "Lorem, ipsum dolor.",
-            "5GB lorem, ipsum dolor.",
-            "Lorem, ipsum dolor.",
-            "Lorem, ipsum dolor.",
+            "Learn the basics of Crypto.",
+            "1:1 walk through and setup.",
+          ]}
+        />
+        <PricingCard
+          pricingTitle="Crypto Mining"
+          price={150}
+          rate="Hourly"
+          listOfPricingDetails={[
+            "Custom built devices.",
+            "Dedicated device setup.",
           ]}
         />
       </Stack>
