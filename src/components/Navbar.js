@@ -288,15 +288,12 @@ const NAV_ITEMS = [
       },
     ],
   },
+
   {
     label: "Learn Crypto",
-    children: [
-      {
-        label: "Basic Crypto 101",
-        href: "#crypto-101",
-      },
-    ],
+    href: "#crypto-101",
   },
+
   {
     label: "Projects",
     children: [
