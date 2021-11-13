@@ -1,71 +1,47 @@
-import React from "react";
-import "./About.css";
-
-import ITSupportSection from "./ITSupport";
-import CryptoMiningSection from "./CryptoMining";
-import Crypto101Section from "./Crypto101";
-
+import ComingSoon from "../components/ComingSoon";
 import {
-  Button,
   Flex,
   Heading,
-  Image,
-  Stack,
   Text,
   Container,
+  Stack,
+  Box,
+  Image,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function About() {
   return (
-    <>
-      <Container maxW="container.lg">
-        <Stack
-          paddingTop={"60px"}
-          marginBlockEnd={"60px"}
-          direction={{ base: "column", md: "row" }}
-        >
-          <Flex p={4} flex={1} align={"center"} justify={"center"}>
-            <Stack spacing={6} w={"full"} maxW={"lg"}>
-              <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-                <Text as={"span"} color={"#3499cc"}>
-                  Crypto
-                </Text>
-                <br />{" "}
-                <Text color={"#5ec3b5"} as={"span"}>
-                  Welcome to the Future.
-                </Text>{" "}
-              </Heading>
-              <Text fontSize={{ base: "md", lg: "lg" }} color={"#c2d6f3"}>
-                Helium IT LLC was founded to educate and integrate crypto
-                currencies into daily life to help offset the costs of monthly
-                recurring services by leveraging hardware and software
-                solutions.{" "}
-              </Text>
-              <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-                <Button rounded={"full"}>How It Works</Button>
-              </Stack>
-            </Stack>
-          </Flex>
-          <Flex flex={1}>
-            <Image
-              className="phone-stock-img"
-              alt={"phone showing stocks"}
-              objectFit={"cover"}
-              src={
-                "https://images.unsplash.com/photo-1615992174118-9b8e9be025e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              }
-            />
-          </Flex>
-        </Stack>
+    <Box id="about">
+      <Container p={4} as={Stack} maxW="container.lg" py={10}>
+        <Flex p={4} flex={1} justify={"center"}>
+          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+            <Text color={"#ffffff"} as={"span"}>
+              Helping to XYZ
+            </Text>
+          </Heading>
+        </Flex>
+        <Flex p={4} flex={4}>
+          <Stack spacing={2} w={"full"} maxW={"lg"}>
+            <Heading color={"#ffffff"} as={"span"} fontSize={{ base: "2xl" }}>
+              Our mission
+            </Heading>
+            <Text color={"#ffffff"} as={"span"} fontSize={{ base: "16" }}>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Text>
+            {/* <Flex color={"#ffffff"}>
+              <div>IMAGE OF YOU HERE</div>
+            </Flex> */}
+          </Stack>
+        </Flex>
       </Container>
-      {/* <div>
-        <hr></hr>
-        <ITSupportSection />
-        <hr></hr>
-        <CryptoMiningSection />
-        <hr></hr>
-        <Crypto101Section />
-      </div> */}
-    </>
+    </Box>
   );
 }

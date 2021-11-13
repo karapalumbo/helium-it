@@ -1,0 +1,16 @@
+.crypto-coins-img {
+  mix-blend-mode: lighten;
+}
+
+.crypto-101-container {
+  position: relative;
+}
+
+.crypto-101-header {
+  position: absolute;
+  top: 90px;
+  transform: translate(-50%, -50%);
+}
+
+.crypto-coins-img {
+}

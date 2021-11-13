@@ -268,6 +268,10 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
+    label: "About Helium",
+    href: "#about",
+  },
+  {
     label: "Our Services",
     children: [
       {
@@ -276,7 +280,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Crypto Mining Consulting and Setup",
-        href: "#crypto-mining",
+        href: "/crypto-mining",
       },
       {
         label: "Pricing",

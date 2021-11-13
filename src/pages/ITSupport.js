@@ -11,15 +11,9 @@ import {
 
 export default function ITSupportSection() {
   return (
-    <Box>
+    <Box id="IT-support">
       <Container p={4} as={Stack} maxW="container.lg" py={10}>
-        <Flex
-          p={4}
-          flex={1}
-          align={"center"}
-          justify={"center"}
-          id="IT-support"
-        >
+        <Flex p={4} flex={1} align={"center"} justify={"center"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text color={"#ffffff"} as={"span"}>
               IT Support and Consulting

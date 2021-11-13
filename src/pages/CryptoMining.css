@@ -1,0 +1,13 @@
+.mining-machine-img {
+  /* mix-blend-mode: darken; */
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+
+.mining-info {
+  margin-left: 50px;
+}
+
+/* .crypto-mining-container {
+} */
