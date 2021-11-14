@@ -112,7 +112,7 @@ export const Navbar = () => {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("white.600", "white.200");
-  const linkHoverColor = useColorModeValue("white.800", "white");
+  const linkHoverColor = useColorModeValue("gray.200", "gray.200");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
@@ -280,12 +280,11 @@ const NAV_ITEMS = [
         label: "Crypto Mining Consulting and Setup",
         href: "/crypto-mining",
       },
+      {
+        label: "Learn Crypto",
+        href: "/#crypto-101",
+      },
     ],
-  },
-
-  {
-    label: "Learn Crypto",
-    href: "/#crypto-101",
   },
 
   {

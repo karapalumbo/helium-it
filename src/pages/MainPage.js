@@ -13,6 +13,7 @@ import {
   Stack,
   Text,
   Container,
+  Link,
 } from "@chakra-ui/react";
 
 export default function MainPage() {
@@ -42,7 +43,9 @@ export default function MainPage() {
                 solutions.{" "}
               </Text>
               <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-                <Button rounded={"full"}>How It Works</Button>
+                <Button rounded={"full"}>
+                  <Link href="/pricing">How It Works</Link>
+                </Button>
               </Stack>
             </Stack>
           </Flex>
@@ -59,11 +62,8 @@ export default function MainPage() {
         </Stack>
       </Container>
       <div>
-        <hr></hr>
         <About />
-        <hr></hr>
         <ITSupportSection />
-        <hr></hr>
         <Crypto101Section />
       </div>
     </>

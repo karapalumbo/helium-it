@@ -17,13 +17,13 @@ import "./Crypto101.css";
 
 export default function Crypto101Section() {
   return (
-    <Box id="crypto-101">
+    <Box id="crypto-101" pt={"50px"} pb={"50px"}>
       <Container
         as={Stack}
         maxW="container.lg"
         className="crypto-101-container"
       >
-        <Flex p={4} flex={1} align={"center"} justify={"center"}>
+        <Flex flex={1} align={"center"} justify={"flex-start"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text color={"#ffffff"} as={"span"} className="crypto-101-header">
               Basic Crypto 101
@@ -31,6 +31,7 @@ export default function Crypto101Section() {
           </Heading>
         </Flex>
         <Flex flex={1}>
+          <ComingSoon />;
           {/* <Image
             className="crypto-coins-img"
             alt={"image of 3 crypto coins"}

@@ -12,44 +12,20 @@ import {
 
 export default function About() {
   return (
-    <Box id="about" align="center">
-      <Container p={4} as={Stack} maxW="container.lg" py={10}>
-        <Flex p={4} flex={1} justify={"center"}>
+    <Box id="about" bg="white" pt={"50px"} pb={"50px"}>
+      <Container as={Stack} maxW="container.lg">
+        <Flex flex={1} justify={"flex-start"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-            <Text color={"#ffffff"} as={"span"}>
-              Expanding the Peoples Network
-            </Text>
+            <Text as={"span"}>Expanding the Peoples Network</Text>
           </Heading>
         </Flex>
 
-        <Text color={"#ffffff"} fontSize={{ base: "16" }}>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </Text>
-
-        <Flex p={4} flex={4}>
-          <Stack spacing={2} w={"full"} maxW={"lg"} mt={10}>
-            <Heading color={"#ffffff"} as={"span"} fontSize={{ base: "2xl" }}>
+        <Flex flex={4}>
+          <Stack spacing={2} w={"full"} maxW={"lg"} mt={5} pr={50}>
+            <Heading as={"span"} fontSize={{ base: "2xl" }} color="#00b9ae">
               Our Mission
             </Heading>
-            <Text color={"#ffffff"} as={"span"} fontSize={{ base: "16" }}>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Text>
-          </Stack>
-
-          <Stack spacing={2} w={"full"} maxW={"lg"} mt={10}>
-            <Heading color={"#ffffff"} as={"span"} fontSize={{ base: "2xl" }}>
-              Why Us?
-            </Heading>
-            <Text color={"#ffffff"} as={"span"} fontSize={{ base: "16" }}>
+            <Text as={"span"} fontSize={{ base: "16" }}>
               {" "}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -57,9 +33,21 @@ export default function About() {
               nisi ut aliquip ex ea commodo consequat.
             </Text>
           </Stack>
-          {/* <Flex color={"#ffffff"}>
-            <div>IMAGE OF YOU HERE</div>
-          </Flex> */}
+
+          <Stack spacing={2} w={"full"} maxW={"lg"} mt={5}>
+            <Heading as={"span"} fontSize={{ base: "2xl" }} color="#00b9ae">
+              Why Us?
+            </Heading>
+            <Text as={"span"} fontSize={{ base: "16" }}>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </Text>
+          </Stack>
         </Flex>
       </Container>
     </Box>

@@ -1,14 +1,6 @@
 import ComingSoon from "../components/ComingSoon";
-import HeadingDropDown from "../components/HeadingDropDown";
-import {
-  Flex,
-  Heading,
-  Text,
-  Container,
-  Box,
-  Stack,
-  Image,
-} from "@chakra-ui/react";
+// import HeadingDropDown from "../components/HeadingDropDown";
+import { Flex, Heading, Text, Container, Box, Stack } from "@chakra-ui/react";
 
 import "./CryptoMining.css";
 
@@ -20,7 +12,6 @@ export default function CryptoMiningSection() {
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text color={"#ffffff"} as={"span"}>
               Mining Consulting and Setup
-              {/* <HeadingDropDown props={"Mining Consulting and Setup"} /> */}
             </Text>
             {""}
           </Heading>
@@ -28,14 +19,6 @@ export default function CryptoMiningSection() {
         <ComingSoon />;
         <Container p={4} as={Stack} maxW="container.lg" py={10}>
           <Flex flex={1}>
-            {/* <Image
-              className="mining-machine-img"
-              alt={"crypto mining machine"}
-              objectFit={"cover"}
-              src={
-                "https://cdn.pixabay.com/photo/2017/09/06/17/40/bitcoin-2722388_1280.jpg"
-              }
-            /> */}
             <Text color={"#ffffff"} maxW="container.sm" className="mining-info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
