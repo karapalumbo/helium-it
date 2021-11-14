@@ -24,8 +24,6 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 
-// import { Link } from "react-scroll";
-
 import ContactModal from "./ContactModal";
 import "./Navbar.css";
 import heliumLogo from "../images/heliumITLogoDark.png";
@@ -269,29 +267,25 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "About Helium",
-    href: "#about",
+    href: "/#about",
   },
   {
     label: "Our Services",
     children: [
       {
         label: "IT Support and Consulting",
-        href: "#IT-support",
+        href: "/#IT-support",
       },
       {
         label: "Crypto Mining Consulting and Setup",
         href: "/crypto-mining",
-      },
-      {
-        label: "Pricing",
-        href: "/pricing",
       },
     ],
   },
 
   {
     label: "Learn Crypto",
-    href: "#crypto-101",
+    href: "/#crypto-101",
   },
 
   {
@@ -302,5 +296,9 @@ const NAV_ITEMS = [
         href: "https://www.helium.com/",
       },
     ],
+  },
+  {
+    label: "Pricing",
+    href: "/pricing",
   },
 ];

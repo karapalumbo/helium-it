@@ -9,6 +9,10 @@ import {
   Image,
 } from "@chakra-ui/react";
 
+import bitcoinImg from "../images/bitcoinImg.png";
+import ethereumImg from "../images/ethereumImg.png";
+import litecoinImg from "../images/litecoinImg.png";
+
 import "./Crypto101.css";
 
 export default function Crypto101Section() {
@@ -27,14 +31,35 @@ export default function Crypto101Section() {
           </Heading>
         </Flex>
         <Flex flex={1}>
-          <Image
+          {/* <Image
             className="crypto-coins-img"
             alt={"image of 3 crypto coins"}
             objectFit={"cover"}
             src={
               "https://cdn.pixabay.com/photo/2018/05/23/04/32/cryptocurrency-3423264_1280.jpg"
             }
+          /> */}
+          {/* <Image
+            className="crypto-coins-img"
+            objectFit={"cover"}
+            alt={"image of bitcoin"}
+            src={bitcoinImg}
+            h={300}
           />
+          <Image
+            className="crypto-coins-img"
+            objectFit={"cover"}
+            alt={"image of ethereum"}
+            src={ethereumImg}
+            h={300}
+          />
+          <Image
+            className="crypto-coins-img"
+            objectFit={"cover"}
+            alt={"image of litecoin"}
+            src={litecoinImg}
+            h={300}
+          /> */}
         </Flex>
       </Container>
     </Box>

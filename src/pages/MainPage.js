@@ -20,7 +20,7 @@ export default function MainPage() {
     <>
       <Container maxW="container.lg">
         <Stack
-          paddingTop={"60px"}
+          paddingTop={"80px"}
           marginBlockEnd={"60px"}
           direction={{ base: "column", md: "row" }}
         >
@@ -31,7 +31,7 @@ export default function MainPage() {
                   Crypto
                 </Text>
                 <br />{" "}
-                <Text color={"#5ec3b5"} as={"span"}>
+                <Text color={"#00b9ae"} as={"span"}>
                   Welcome to the Future.
                 </Text>{" "}
               </Heading>

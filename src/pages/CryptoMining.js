@@ -14,9 +14,9 @@ import "./CryptoMining.css";
 
 export default function CryptoMiningSection() {
   return (
-    <Box mt={10} id="crypto-mining">
-      <Container p={4} as={Stack} maxW="container.lg" py={10}>
-        <Flex p={4} flex={1} align={"center"} justify={"center"}>
+    <Box id="crypto-mining" paddingTop={"80px"}>
+      <Container as={Stack} maxW="container.lg">
+        <Flex flex={1} align={"center"} justify={"center"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text color={"#ffffff"} as={"span"}>
               Mining Consulting and Setup

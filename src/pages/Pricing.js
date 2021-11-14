@@ -4,10 +4,10 @@ import PricingCard from "../components/PricingCard";
 
 function Pricing() {
   return (
-    <Box py={12} pt={"60px"}>
+    <Box py={12} pt={"80px"}>
       <VStack spacing={2} textAlign="center">
-        <Heading mt="20px" as="h1" fontSize="4xl" color="white">
-          A plan to meet your crypto needs
+        <Heading as="h1" fontSize="4xl" color="white" mb={30}>
+          A plan to meet your crypto needs.
         </Heading>
         {/* <Text fontSize="lg" color={"gray.500"}>
           Start with 14-day free trial. No credit card needed. Cancel at
@@ -19,7 +19,7 @@ function Pricing() {
         textAlign="center"
         justify="center"
         spacing={{ base: 4, lg: 10 }}
-        py={10}
+        py={30}
       >
         <PricingCard
           pricingTitle="IT Support"
@@ -31,7 +31,7 @@ function Pricing() {
           ]}
         />
         <PricingCard
-          pricingTitle="Basic Crypto 101"
+          pricingTitle="Crypto 101"
           price={150}
           rate="Hourly"
           listOfPricingDetails={[

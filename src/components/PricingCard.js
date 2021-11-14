@@ -54,7 +54,7 @@ const PricingCard = ({
         >
           <Text
             textTransform="uppercase"
-            bg={useColorModeValue("teal.300", "teal.700")}
+            bg={useColorModeValue("#00b9ae")}
             px={3}
             py={1}
             color={useColorModeValue("gray.900", "gray.300")}
