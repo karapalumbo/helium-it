@@ -245,6 +245,7 @@ const MobileNavItem = ({ label, children, href }) => {
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
         <Stack
+          color={"#000000"}
           mt={2}
           pl={4}
           borderLeft={1}
@@ -286,7 +287,6 @@ const NAV_ITEMS = [
       },
     ],
   },
-
   {
     label: "Projects",
     children: [

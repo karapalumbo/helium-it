@@ -1,6 +1,14 @@
 import ComingSoon from "../components/ComingSoon";
 // import HeadingDropDown from "../components/HeadingDropDown";
-import { Flex, Heading, Text, Container, Box, Stack } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Text,
+  Container,
+  Box,
+  Stack,
+  Image,
+} from "@chakra-ui/react";
 
 import "./CryptoMining.css";
 
@@ -17,7 +25,7 @@ export default function CryptoMiningSection() {
           </Heading>
         </Flex>
         <ComingSoon />;
-        <Container p={4} as={Stack} maxW="container.lg" py={10}>
+        <Stack p={4} maxW="container.lg" py={10}>
           <Flex flex={1}>
             <Text color={"#ffffff"} maxW="container.sm" className="mining-info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -38,7 +46,12 @@ export default function CryptoMiningSection() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Text>
           </Flex>
-        </Container>
+        </Stack>
+        {/* <Image
+          src={
+            "https://cdn.pixabay.com/photo/2018/10/15/22/11/blockchain-3750157_1280.jpg"
+          }
+        /> */}
       </Container>
     </Box>
   );
