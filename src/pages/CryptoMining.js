@@ -35,6 +35,10 @@ export default function CryptoMiningSection() {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
             </Text>
             <Text color={"#ffffff"} maxW="container.sm" className="mining-info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -47,11 +51,6 @@ export default function CryptoMiningSection() {
             </Text>
           </Flex>
         </Stack>
-        {/* <Image
-          src={
-            "https://cdn.pixabay.com/photo/2018/10/15/22/11/blockchain-3750157_1280.jpg"
-          }
-        /> */}
       </Container>
     </Box>
   );

@@ -6,6 +6,8 @@ import {
   Container,
   Stack,
   Box,
+  UnorderedList,
+  ListItem,
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -27,25 +29,26 @@ export default function About() {
             </Heading>
             <Text as={"span"} fontSize={{ base: "16" }}>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              To introduce individuals and businesses to blockchain technology
+              by using a hands on approach to education and integration.
             </Text>
           </Stack>
 
           <Stack spacing={2} w={"full"} maxW={"lg"} mt={5}>
             <Heading as={"span"} fontSize={{ base: "2xl" }} color="#00b9ae">
-              Why Us?
+              Core Values
             </Heading>
             <Text as={"span"} fontSize={{ base: "16" }}>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              <UnorderedList>
+                <ListItem>
+                  Treat everyone like they are your loving grandmother{" "}
+                </ListItem>
+                <ListItem>Big Rick Energy</ListItem>
+                <ListItem>Honest, transparent communication</ListItem>
+                <ListItem>Passion for continued education</ListItem>
+                <ListItem>Be proud of progress</ListItem>
+              </UnorderedList>
             </Text>
           </Stack>
         </Flex>
