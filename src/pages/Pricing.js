@@ -2,9 +2,9 @@ import { Box, Stack, Heading, VStack, Text } from "@chakra-ui/react";
 
 import PricingCard from "../components/PricingCard";
 
-function Pricing() {
+const Pricing = () => {
   return (
-    <Box py={12} pt={"80px"}>
+    <Box id="pricing" py={12} pt={"80px"}>
       <VStack spacing={2} textAlign="center">
         <Heading
           fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
@@ -55,6 +55,6 @@ function Pricing() {
       </Stack>
     </Box>
   );
-}
+};
 
 export default Pricing;

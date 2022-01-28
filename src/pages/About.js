@@ -10,7 +10,7 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 
-export default function About() {
+const About = () => {
   return (
     <Box id="about" bg="white" pt={"50px"} pb={"50px"}>
       <Container as={Stack} maxW="container.lg">
@@ -53,4 +53,6 @@ export default function About() {
       </Container>
     </Box>
   );
-}
+};
+
+export default About;

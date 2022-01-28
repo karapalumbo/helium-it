@@ -16,7 +16,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-export default function MainPage() {
+const MainPage = () => {
   return (
     <>
       <Container maxW="container.lg">
@@ -68,4 +68,6 @@ export default function MainPage() {
       </div>
     </>
   );
-}
+};
+
+export default MainPage;

@@ -4,10 +4,33 @@ import { Flex, Heading, Text, Container, Box, Stack } from "@chakra-ui/react";
 import ConsultCard from "../components/ConsultCard";
 import "./CryptoConsult.css";
 
-export default function CryptoConsultSection() {
+const consultItems = [
+  {
+    heading: "Basic Insight Support",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    heading: "Computer Setup",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    heading: "Network Setup",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    heading: "Computer Monitoring",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+  },
+];
+
+const CryptoConsultSection = () => {
   return (
     <>
-      <Box id="crypto-consult" paddingTop={"70px"}>
+      <Box id="crypto-consult" paddingTop={"70px"} height="80vh">
         <Container as={Stack} maxW="container.lg">
           <Flex flex={1} align={"center"} justify={"center"}>
             <Heading
@@ -23,34 +46,20 @@ export default function CryptoConsultSection() {
           </Flex>
           <Stack p={4} maxW="container.lg">
             <Flex flex={1}>
-              <ConsultCard
-                heading={"Basic Insight Support"}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat."
-                }
-              />
-              <ConsultCard
-                heading={"Computer Setup"}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat."
-                }
-              />
-              <ConsultCard
-                heading={"Network Setup"}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat."
-                }
-              />
-              <ConsultCard
-                heading={"Computer Monitoring"}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat."
-                }
-              />
+              {consultItems.map((consultItem) => {
+                return (
+                  <ConsultCard
+                    heading={consultItem.heading}
+                    description={consultItem.description}
+                  />
+                );
+              })}
             </Flex>
           </Stack>
         </Container>
       </Box>
     </>
   );
-}
+};
+
+export default CryptoConsultSection;

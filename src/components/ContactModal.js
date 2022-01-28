@@ -11,7 +11,7 @@ import {
 
 import "./ContactForm.css";
 
-export default function ContactModal({ ...elemProps }) {
+const ContactModal = ({ ...elemProps }) => {
   return (
     <>
       <Modal size="md" {...elemProps}>
@@ -25,4 +25,6 @@ export default function ContactModal({ ...elemProps }) {
       </Modal>
     </>
   );
-}
+};
+
+export default ContactModal;

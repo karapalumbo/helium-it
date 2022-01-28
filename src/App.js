@@ -2,10 +2,11 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Container } from "@chakra-ui/react";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 import Routes from "./Routes";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
@@ -14,8 +15,9 @@ function App() {
         </Container>
         <Routes />
       </BrowserRouter>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,9 +1,9 @@
 .App {
   background-color: #0f1230;
-  /* height: calc(100vh - 139px) !important; */
+  /* height: calc(100vh - 139px); */
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .img-banner {
   height: 300px;

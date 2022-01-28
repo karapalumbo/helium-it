@@ -1,7 +1,7 @@
 import ComingSoon from "../components/ComingSoon";
 import { Flex, Heading, Text, Container, Stack, Box } from "@chakra-ui/react";
 
-export default function ITSupportSection() {
+const ITSupportSection = () => {
   return (
     <Box id="IT-support" bg="#f6f9fc" pt={"50px"} pb={"50px"}>
       <Container as={Stack} maxW="container.lg">
@@ -14,4 +14,6 @@ export default function ITSupportSection() {
       </Container>
     </Box>
   );
-}
+};
+
+export default ITSupportSection;

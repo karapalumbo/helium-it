@@ -23,7 +23,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import PrimaryButton from "./PrimaryButton";
 
-export default function ContactForm() {
+const ContactForm = () => {
   const {
     register,
     handleSubmit,
@@ -167,4 +167,6 @@ export default function ContactForm() {
       </Flex>
     </Container>
   );
-}
+};
+
+export default ContactForm;

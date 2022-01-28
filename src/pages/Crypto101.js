@@ -15,7 +15,7 @@ import litecoinImg from "../images/litecoinImg.png";
 
 import "./Crypto101.css";
 
-export default function Crypto101Section() {
+const Crypto101Section = () => {
   return (
     <Box id="crypto-101" pt={"50px"} pb={"50px"}>
       <Container
@@ -79,4 +79,6 @@ export default function Crypto101Section() {
       </Container>
     </Box>
   );
-}
+};
+
+export default Crypto101Section;

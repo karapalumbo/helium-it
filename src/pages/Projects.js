@@ -10,9 +10,9 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-export default function Projects() {
+const Projects = () => {
   return (
-    <Box id="Projects" bg="#f6f9fc" pt={"80px"}>
+    <Box id="projects" bg="#f6f9fc" pt={"80px"} height="80vh">
       <Container maxW="container.lg">
         <Flex flex={1} align={"center"} justify={"flex-start"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} mb={30}>
@@ -37,4 +37,6 @@ export default function Projects() {
       <Divider />
     </Box>
   );
-}
+};
+
+export default Projects;
