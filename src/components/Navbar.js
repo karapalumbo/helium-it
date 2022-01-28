@@ -274,11 +274,11 @@ const NAV_ITEMS = [
     label: "Our Services",
     children: [
       {
-        label: "IT Support and Consulting",
+        label: "IT Support",
         href: "/#IT-support",
       },
       {
-        label: "Crypto Mining Consulting and Setup",
+        label: "Crypto Consulting and Setup",
         href: "/crypto-mining",
       },
       {
@@ -289,12 +289,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Projects",
-    children: [
-      {
-        label: "Helium",
-        href: "https://www.helium.com/",
-      },
-    ],
+    href: "/projects",
   },
   {
     label: "Pricing",

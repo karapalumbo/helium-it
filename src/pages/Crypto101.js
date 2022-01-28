@@ -30,37 +30,51 @@ export default function Crypto101Section() {
             </Text>{" "}
           </Heading>
         </Flex>
+
         <Flex flex={1}>
-          <ComingSoon />;
-          {/* <Image
-            className="crypto-coins-img"
-            alt={"image of 3 crypto coins"}
-            objectFit={"cover"}
-            src={
-              "https://cdn.pixabay.com/photo/2018/05/23/04/32/cryptocurrency-3423264_1280.jpg"
-            }
-          /> */}
-          {/* <Image
-            className="crypto-coins-img"
-            objectFit={"cover"}
-            alt={"image of bitcoin"}
-            src={bitcoinImg}
-            h={300}
-          />
-          <Image
-            className="crypto-coins-img"
-            objectFit={"cover"}
-            alt={"image of ethereum"}
-            src={ethereumImg}
-            h={300}
-          />
-          <Image
-            className="crypto-coins-img"
-            objectFit={"cover"}
-            alt={"image of litecoin"}
-            src={litecoinImg}
-            h={300}
-          /> */}
+          <Heading fontSize={{ base: "xl" }} mt={"25px"}>
+            <Text
+              color={"#ffffff"}
+              maxW="container.sm"
+              className="what-is-crypto"
+            >
+              What is cryptocurrency?
+            </Text>
+          </Heading>
+        </Flex>
+        <Flex>
+          <Text color={"#ffffff"} maxW="container.sm" className="mining-info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Text>
+        </Flex>
+
+        <Flex flex={1}>
+          <Heading fontSize={{ base: "xl" }} mt={"25px"}>
+            <Text
+              color={"#ffffff"}
+              maxW="container.sm"
+              className="what-is-crypto"
+            >
+              Why is it important?
+            </Text>
+          </Heading>
+        </Flex>
+        <Flex>
+          <Text color={"#ffffff"} maxW="container.sm" className="mining-info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Text>
         </Flex>
       </Container>
     </Box>

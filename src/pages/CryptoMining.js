@@ -19,7 +19,7 @@ export default function CryptoMiningSection() {
         <Flex flex={1} align={"center"} justify={"center"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text color={"#ffffff"} as={"span"}>
-              Mining Consulting and Setup
+              Cryptocurrency Consulting and Setup
             </Text>
             {""}
           </Heading>

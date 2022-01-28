@@ -1,13 +1,5 @@
 import ComingSoon from "../components/ComingSoon";
-import {
-  Flex,
-  Heading,
-  Text,
-  Container,
-  Stack,
-  Box,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Flex, Heading, Text, Container, Stack, Box } from "@chakra-ui/react";
 
 export default function ITSupportSection() {
   return (
@@ -15,7 +7,7 @@ export default function ITSupportSection() {
       <Container as={Stack} maxW="container.lg">
         <Flex flex={1} align={"center"} justify={"flex-start"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-            <Text as={"span"}>IT Support and Consulting</Text>{" "}
+            <Text as={"span"}>IT Support</Text>{" "}
           </Heading>
         </Flex>
         <ComingSoon />;
