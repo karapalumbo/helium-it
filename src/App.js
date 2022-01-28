@@ -1,9 +1,8 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Container } from "@chakra-ui/react";
-
 import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
+
 import Routes from "./Routes";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           <Navbar />
         </Container>
         <Routes />
-        <Footer />
       </BrowserRouter>
     </div>
   );

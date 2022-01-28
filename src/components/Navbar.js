@@ -279,7 +279,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Crypto Consulting and Setup",
-        href: "/crypto-mining",
+        href: "/crypto-consult",
       },
       {
         label: "Learn Crypto",

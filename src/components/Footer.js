@@ -27,10 +27,13 @@ const ListHeader = ({ children }) => {
 export const Footer = () => {
   return (
     <Box
+      as="footer"
+      py="5"
+      px={{ base: "4", md: "8" }}
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
-      <Container p={4} as={Stack} maxW="container.lg" py={10}>
+      <Container as={Stack} maxW="container.lg">
         <SimpleGrid
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 1fr 1fr" }}
           spacing={4}

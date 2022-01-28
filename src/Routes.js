@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Pricing from "./pages/Pricing";
 import MainPage from "./pages/MainPage";
-import CryptoMiningSection from "./pages/CryptoMining";
+import CryptoConsultSection from "./pages/CryptoConsult";
 import Projects from "./pages/Projects";
 
 function Routes() {
@@ -16,8 +16,8 @@ function Routes() {
         <Pricing />
       </Route>
 
-      <Route exact path="/crypto-mining">
-        <CryptoMiningSection />
+      <Route exact path="/crypto-consult">
+        <CryptoConsultSection />
       </Route>
 
       <Route exact path="/projects">

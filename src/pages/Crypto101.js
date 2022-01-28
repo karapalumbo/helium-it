@@ -34,7 +34,7 @@ export default function Crypto101Section() {
         <Flex flex={1}>
           <Heading fontSize={{ base: "xl" }} mt={"25px"}>
             <Text
-              color={"#ffffff"}
+              color={"#3499cc"}
               maxW="container.sm"
               className="what-is-crypto"
             >
@@ -43,7 +43,7 @@ export default function Crypto101Section() {
           </Heading>
         </Flex>
         <Flex>
-          <Text color={"#ffffff"} maxW="container.sm" className="mining-info">
+          <Text color={"#ffffff"} maxW="container.sm" className="consult-info">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -57,7 +57,7 @@ export default function Crypto101Section() {
         <Flex flex={1}>
           <Heading fontSize={{ base: "xl" }} mt={"25px"}>
             <Text
-              color={"#ffffff"}
+              color={"#3499cc"}
               maxW="container.sm"
               className="what-is-crypto"
             >
@@ -66,7 +66,7 @@ export default function Crypto101Section() {
           </Heading>
         </Flex>
         <Flex>
-          <Text color={"#ffffff"} maxW="container.sm" className="mining-info">
+          <Text color={"#ffffff"} maxW="container.sm" className="consult-info">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

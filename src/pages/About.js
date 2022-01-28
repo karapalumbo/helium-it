@@ -8,8 +8,6 @@ import {
   Box,
   UnorderedList,
   ListItem,
-  Image,
-  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function About() {

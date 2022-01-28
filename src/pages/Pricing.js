@@ -6,7 +6,11 @@ function Pricing() {
   return (
     <Box py={12} pt={"80px"}>
       <VStack spacing={2} textAlign="center">
-        <Heading as="h1" fontSize="4xl" color="white" mb={30}>
+        <Heading
+          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+          mb={30}
+          color="#ffffff"
+        >
           A plan to meet your crypto needs.
         </Heading>
         {/* <Text fontSize="lg" color={"gray.500"}>
@@ -40,7 +44,7 @@ function Pricing() {
           ]}
         />
         <PricingCard
-          pricingTitle="Crypto Mining"
+          pricingTitle="Consultation"
           price={150}
           rate="Hourly"
           listOfPricingDetails={[
