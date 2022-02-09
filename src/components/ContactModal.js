@@ -6,7 +6,6 @@ import {
   ModalContent,
   ModalBody,
   ModalCloseButton,
-  useDisclosure,
 } from "@chakra-ui/react";
 
 import "./ContactForm.css";
@@ -14,11 +13,11 @@ import "./ContactForm.css";
 const ContactModal = ({ ...elemProps }) => {
   return (
     <>
-      <Modal size="md" {...elemProps}>
+      <Modal size="xl" {...elemProps}>
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
-          <ModalBody>
+          <ModalBody pl={2}>
             <ContactForm />
           </ModalBody>
         </ModalContent>

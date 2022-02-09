@@ -1,18 +1,4 @@
-import ComingSoon from "../components/ComingSoon";
-import {
-  Flex,
-  Heading,
-  Text,
-  Container,
-  Box,
-  Stack,
-  Image,
-} from "@chakra-ui/react";
-
-import bitcoinImg from "../images/bitcoinImg.png";
-import ethereumImg from "../images/ethereumImg.png";
-import litecoinImg from "../images/litecoinImg.png";
-
+import { Flex, Heading, Text, Container, Box, Stack } from "@chakra-ui/react";
 import "./Crypto101.css";
 
 const Crypto101Section = () => {

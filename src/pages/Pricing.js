@@ -14,8 +14,8 @@ const Pricing = () => {
           A plan to meet your crypto needs.
         </Heading>
         {/* <Text fontSize="lg" color={"gray.500"}>
-          Start with 14-day free trial. No credit card needed. Cancel at
-          anytime.
+          We offer consultations between 15-30 minute increments to learn the
+          basics of crypto!
         </Text> */}
       </VStack>
       <Stack
@@ -41,6 +41,7 @@ const Pricing = () => {
           listOfPricingDetails={[
             "Learn the basics of Crypto.",
             "1:1 walk through and setup.",
+            "15-30 min consultations",
           ]}
         />
         <PricingCard

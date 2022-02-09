@@ -1,4 +1,3 @@
-import ComingSoon from "../components/ComingSoon";
 import {
   Flex,
   Heading,
