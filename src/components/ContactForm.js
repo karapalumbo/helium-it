@@ -125,7 +125,7 @@ const ContactForm = () => {
                     <InputGroup
                       borderColor="#E0E1E7"
                       marginBottom="3"
-                      width="280px"
+                      width="320px"
                     >
                       <InputLeftElement
                         pointerEvents="none"
