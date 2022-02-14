@@ -4,11 +4,12 @@ import PricingCard from "../components/PricingCard";
 
 const Pricing = () => {
   return (
-    <Box id="pricing" py={12} pt={"80px"}>
-      <VStack spacing={2} textAlign="center">
+    <Box id="pricing" pt={"40px"}>
+      <VStack textAlign="center">
         <Heading
           fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-          mb={30}
+          mb={5}
+          mt={10}
           color="#ffffff"
         >
           A plan to meet your crypto needs.
@@ -22,7 +23,7 @@ const Pricing = () => {
         direction={{ base: "column", md: "row" }}
         textAlign="center"
         justify="center"
-        spacing={{ base: 4, lg: 10 }}
+        spacing={{ base: 10 }}
         py={30}
       >
         <PricingCard
@@ -31,7 +32,7 @@ const Pricing = () => {
           rate="Hourly"
           listOfPricingDetails={[
             "Specialized for your business.",
-            "Personal IT support and consulting.",
+            "Personal IT support/consulting.",
           ]}
         />
         <PricingCard

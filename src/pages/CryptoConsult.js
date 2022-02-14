@@ -38,7 +38,7 @@ const CryptoConsultSection = () => {
   return (
     <>
       <Box id="crypto-consult" paddingTop={"70px"} height="80vh">
-        <Container as={Stack} maxW="container.lg">
+        <Container as={Stack} maxW="container.xl">
           <Flex flex={1} align={"center"} justify={"center"}>
             <Heading
               fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}

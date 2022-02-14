@@ -12,7 +12,6 @@ import {
   Heading,
   Text,
   Tag,
-  TagLeftIcon,
   Button,
   IconButton,
   VStack,
@@ -76,23 +75,37 @@ const ContactForm = () => {
       </Heading> */}
       <Flex width="100%">
         {" "}
-        <Box color="#0B0E3F" display="inline-block" width="75%" mt={50}>
+        <Box color="#0B0E3F" display="inline-block" width="75%">
           <Heading mt="4" mb="10">
             Contact Us
           </Heading>
           <Box>
-            <Tag mb="5" backgroundColor="white" size="20px">
-              <TagLeftIcon as={MdPhone} />
+            <Tag
+              mb="5"
+              backgroundColor="white"
+              leftIcon={<MdPhone size="20px" />}
+              _hover={{ bg: "white" }}
+              _focus="none"
+              cursor="arrow"
+            >
               888-888-8888
             </Tag>
-            <Tag mb="5" backgroundColor="white" size="20px">
-              <TagLeftIcon as={MdEmail} />
+            <Button
+              mb="5"
+              backgroundColor="white"
+              leftIcon={<MdEmail size="20px" />}
+              _hover={{ bg: "white" }}
+              _focus="none"
+            >
               info@heliumit.net
-            </Tag>
-            <Tag mb="5" backgroundColor="white" size="20px">
-              <TagLeftIcon as={BsDiscord} />
-              <Link href={"https://discord.gg/ZjugCrUvza"}>Discord</Link>
-            </Tag>
+            </Button>
+            <IconButton
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              icon={<BsDiscord size="28px" />}
+            />
+            <Link href={"https://discord.gg/ZjugCrUvza"}>Discord</Link>
           </Box>
         </Box>
         <Box color="white" borderRadius="lg" width="100%">

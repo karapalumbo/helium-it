@@ -17,7 +17,7 @@ const ContactModal = ({ ...elemProps }) => {
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
-          <ModalBody pl={2}>
+          <ModalBody>
             <ContactForm />
           </ModalBody>
         </ModalContent>

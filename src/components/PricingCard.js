@@ -18,7 +18,6 @@ import ContactModal from "../components/ContactModal";
 function PriceWrapper({ children }) {
   return (
     <Box
-      mb={4}
       shadow="base"
       borderWidth="1px"
       alignSelf={{ base: "center", lg: "flex-start" }}
@@ -45,7 +44,7 @@ const PricingCard = ({
 
   return (
     <PriceWrapper>
-      <Box position="relative">
+      <Box position="relative" maxW="min-content">
         <Box
           position="absolute"
           top="-16px"
