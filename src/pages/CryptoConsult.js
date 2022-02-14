@@ -37,13 +37,12 @@ const consultItems = [
 const CryptoConsultSection = () => {
   return (
     <>
-      <Box id="crypto-consult" paddingTop={"70px"} height="80vh">
-        <Container as={Stack} maxW="container.xl">
+      <Box id="crypto-consult" pt={"80px"} minH={"80vh"}>
+        <Container maxW="container.lg">
           <Flex flex={1} align={"center"} justify={"center"}>
             <Heading
               fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-              mb={30}
-              color="#ffffff"
+              mb={"20px"}
             >
               <Text color={"#ffffff"} as={"span"}>
                 Crypto Consulting and Setup
@@ -51,19 +50,17 @@ const CryptoConsultSection = () => {
               {""}
             </Heading>
           </Flex>
-          <Stack p={4} maxW="container.lg">
-            <Flex flex={1}>
-              {consultItems.map((consultItem) => {
-                return (
-                  <ConsultCard
-                    icon={consultItem.icon}
-                    heading={consultItem.heading}
-                    description={consultItem.description}
-                  />
-                );
-              })}
-            </Flex>
-          </Stack>
+          <Flex direction={{ base: "column", md: "row" }}>
+            {consultItems.map((consultItem) => {
+              return (
+                <ConsultCard
+                  icon={consultItem.icon}
+                  heading={consultItem.heading}
+                  description={consultItem.description}
+                />
+              );
+            })}
+          </Flex>
         </Container>
       </Box>
     </>

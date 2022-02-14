@@ -12,7 +12,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Projects = () => {
   return (
-    <Box id="projects" bg="#f6f9fc" pt={"80px"} height="80vh">
+    <Box id="projects" bg="#f6f9fc" pt={"80px"} minH={"80vh"}>
       <Container maxW="container.lg">
         <Flex flex={1} align={"center"} justify={"flex-start"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} mb={30}>

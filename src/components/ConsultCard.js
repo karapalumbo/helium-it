@@ -3,7 +3,7 @@ import { Flex, Heading, Text, Container, Stack, Box } from "@chakra-ui/react";
 const ConsultCard = ({ heading, description, icon }) => {
   return (
     <Box id="consultCard">
-      <Container as={Stack} maxW="container.md">
+      <Container as={Stack} mt={"20px"}>
         <Flex flex={1} align={"center"} justify={"flex-start"}>
           <Heading fontSize={{ base: "lg" }} color={"#ffffff"}>
             {icon}
