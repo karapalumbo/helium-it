@@ -8,8 +8,6 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 
-import "./ContactForm.css";
-
 const ContactModal = ({ ...elemProps }) => {
   return (
     <>

@@ -3,17 +3,13 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-import "./ContactForm.css";
-
 import {
   Container,
   Flex,
   Box,
   Heading,
   Text,
-  Tag,
   Button,
-  IconButton,
   VStack,
   FormControl,
   FormLabel,
@@ -69,19 +65,23 @@ const ContactForm = () => {
   };
 
   return (
-    <Container centerContent>
-      {/* <Heading mt="4" mb="4">
+    <Container>
+      <Heading as="h1" size="xl" align={"center"}>
         Contact Us
-      </Heading> */}
-      <Flex width="100%">
+      </Heading>
+      <Text mt={{ sm: 3, md: 3, lg: 5 }} align={"center"} color="gray.500">
+        Complete the form below to contact us!
+      </Text>
+      <Flex width="100%" direction={{ base: "column", md: "row" }}>
         {" "}
-        <Box color="#0B0E3F" display="inline-block" width="75%">
-          <Heading mt="4" mb="10">
+        <Box color="#0B0E3F" display="inline-block" width="75%" mt={"5px"}>
+          {/* <Heading mt="4" mb="5" as="h1" size="xl">
             Contact Us
-          </Heading>
-          <Box>
-            <Tag
-              mb="5"
+          </Heading> */}
+          <Box mt={"20px"}>
+            <Button
+              mb="2"
+              p="0"
               backgroundColor="white"
               leftIcon={<MdPhone size="20px" />}
               _hover={{ bg: "white" }}
@@ -89,9 +89,11 @@ const ContactForm = () => {
               cursor="arrow"
             >
               888-888-8888
-            </Tag>
+            </Button>
+
             <Button
-              mb="5"
+              mb="2"
+              p="0"
               backgroundColor="white"
               leftIcon={<MdEmail size="20px" />}
               _hover={{ bg: "white" }}
@@ -99,20 +101,21 @@ const ContactForm = () => {
             >
               info@heliumit.net
             </Button>
-            <IconButton
-              variant="ghost"
-              size="lg"
-              isRound={true}
-              icon={<BsDiscord size="28px" />}
-            />
-            <Link href={"https://discord.gg/ZjugCrUvza"}>Discord</Link>
+
+            <Button
+              mb="2"
+              p="0"
+              backgroundColor="white"
+              leftIcon={<BsDiscord size="20px" />}
+              _hover={{ bg: "white" }}
+              _focus="none"
+            >
+              <Link href={"https://discord.gg/ZjugCrUvza"}>Discord</Link>
+            </Button>
           </Box>
         </Box>
         <Box color="white" borderRadius="lg" width="100%">
           <Box color="#0B0E3F" display="inline-block">
-            {/* <Heading mt="4" mb="4">
-              Contact Us
-            </Heading> */}
             <Box mt="6" mb="4">
               <VStack spacing={4}>
                 <form
