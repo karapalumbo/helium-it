@@ -42,7 +42,7 @@ const Pricing = () => {
           listOfPricingDetails={[
             "Learn the basics of Crypto.",
             "1:1 walk through and setup.",
-            "15-30 min consultations",
+            "15-30 min consultations.",
           ]}
         />
         <PricingCard
