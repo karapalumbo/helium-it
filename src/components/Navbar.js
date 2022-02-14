@@ -25,7 +25,6 @@ import {
 } from "@chakra-ui/icons";
 
 import ContactModal from "./ContactModal";
-import "./Navbar.css";
 import heliumLogo from "../images/heliumITLogoDark.png";
 import PrimaryButton from "./PrimaryButton";
 
@@ -42,6 +41,12 @@ export const Navbar = () => {
       className="navbar"
       bg={useColorModeValue("#0f1230", "white")}
       color={useColorModeValue("white", "white")}
+      position={"fixed"}
+      top="0"
+      zIndex="1"
+      right="0"
+      left="0"
+      p="0"
     >
       <Container maxW="container.lg">
         <Flex

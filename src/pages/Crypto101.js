@@ -1,5 +1,4 @@
 import { Flex, Heading, Text, Container, Box, Stack } from "@chakra-ui/react";
-import "./Crypto101.css";
 
 const Crypto101Section = () => {
   return (
@@ -8,6 +7,7 @@ const Crypto101Section = () => {
         as={Stack}
         maxW="container.lg"
         className="crypto-101-container"
+        position="relative"
       >
         <Flex flex={1} align={"center"} justify={"flex-start"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
