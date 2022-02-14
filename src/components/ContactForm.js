@@ -75,9 +75,6 @@ const ContactForm = () => {
       <Flex width="100%" direction={{ base: "column", md: "row" }}>
         {" "}
         <Box color="#0B0E3F" display="inline-block" width="75%" mt={"5px"}>
-          {/* <Heading mt="4" mb="5" as="h1" size="xl">
-            Contact Us
-          </Heading> */}
           <Box mt={"20px"}>
             <Button
               mb="2"
@@ -86,7 +83,6 @@ const ContactForm = () => {
               leftIcon={<MdPhone size="20px" />}
               _hover={{ bg: "white" }}
               _focus="none"
-              cursor="arrow"
             >
               888-888-8888
             </Button>
@@ -105,6 +101,7 @@ const ContactForm = () => {
             <Button
               mb="2"
               p="0"
+              display="flex"
               backgroundColor="white"
               leftIcon={<BsDiscord size="20px" />}
               _hover={{ bg: "white" }}
