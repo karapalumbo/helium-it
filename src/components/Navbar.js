@@ -97,7 +97,7 @@ export const Navbar = () => {
             direction={"row"}
             spacing={6}
           >
-            <PrimaryButton text="Contact" onClick={handleClick} />
+            <PrimaryButton text="Contact" onClick={handleClick} ml="30px" />
             <ContactModal isOpen={isContactModalOpen} onClose={onClose} />
           </Stack>
         </Flex>

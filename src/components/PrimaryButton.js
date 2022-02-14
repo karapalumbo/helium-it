@@ -6,7 +6,6 @@ const PrimaryButton = ({ text, ...elemProps }) => {
       color="white"
       variant="solid"
       bg="#0f1230"
-      // marginTop="3"
       type="submit"
       width="100%"
       _hover={{ bg: "#1A365D" }}
